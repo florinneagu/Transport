@@ -18,9 +18,12 @@ namespace Transport
             Schedule schedule = new Schedule();
             schedule.Initialize(provider);
             schedule.Print();
+            Console.ReadKey();
 //            schedule.PrintNextArrivalTime("Yonge", Direction.North, DateTime.Now.ToString("HH:mm"));
             schedule.PrintNextArrivalTimeDirect("Yonge", Direction.North, "8:17");
+            Console.ReadKey();
             schedule.PrintNextArrivalTime("Yonge", Direction.North, "8:17");
+            Console.ReadKey();
             schedule.PrintArrivalTimesForStation("Yonge");
             Console.ReadKey();
         }

@@ -36,7 +36,7 @@ namespace TransportModel
         public void PrintNextArrivalTimeDirect(string stationName, Direction direction, string time)
         {
             string arrivalTime = _provider.FindNextArrival(stationName, (int)direction, time);
-            Console.WriteLine("Next Train at {0}", arrivalTime);
+            Console.WriteLine("Station: {0} Direction: {1} Next Train at {2}", stationName, direction.ToString(), arrivalTime);
         }
 
         public void PrintNextArrivalTime(string stationName, Direction direction, string time)
@@ -57,7 +57,7 @@ namespace TransportModel
 
                                 if (arrivalTimeSpan > timeSpan)
                                 {
-                                    Console.WriteLine("Next Train at {0}", arrivalTime);
+                                    Console.WriteLine("Station: {0} Direction: {1} Next Train at {2}", stationName, direction.ToString(), arrivalTime);
                                     break;
                                 }
                             }

@@ -41,7 +41,7 @@ namespace TransportModel
 
         public void Print()
         {
-            Console.WriteLine("Line: {0}", Name);
+            Console.WriteLine("Line: {0} Direction: {1}", Name, Direction.ToString());
             foreach (var item in Stations)
             {
                 item.Value.Print();

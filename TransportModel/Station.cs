@@ -46,10 +46,10 @@ namespace TransportModel
         }
         public void Print()
         {
-            Console.WriteLine("Station: {0}", Name);
+            Console.WriteLine("\tStation: {0}. Arrival times: ", Name);
             foreach (var arrivalTime in ArrivalTimes)
             {
-                Console.Write("\tArrival Time: {0}", arrivalTime);
+                Console.Write("\t {0} ", arrivalTime);
             }
             Console.WriteLine();
             Console.WriteLine();
